@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#242424">
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="manifest" href="manifest.json">
+    <title>Cine</title>
+  </head>
+  <body>
+    <div class="container mt-6">
+      <h1>Cine</h1>
+      <div class="row">
+        <div class="col-md-6">
+          <form>
+            <div class="form-group">
+              <label for="username">Nombre de Usuario:</label> <br />
+              <input
+                id="nombre"
+                class="input"
+                name="text"
+                placeholder="Nombre de Usuario"
+                type="search"
+              />
+            </div>
+            <div class="form-group">
+              <label for="email">Correo Electrónico:</label> <br />
+              <input
+                id="correo"
+                class="input"
+                name="text"
+                placeholder="Correo Electrónico"
+                type="email"
+              />
+            </div>
+            <div class="form-group">
+              <label for="ticketCount">Número de Boletos:</label> <br />
+              <!-- <input type="number" class="form-control" id="ticketCount" placeholder="Número de Boletos"> -->
+
+              <input
+                id="boletos"
+                class="input"
+                name="text"
+                placeholder="Número de Boletos"
+                type="number"
+              />
+            </div>
+            <div class="form-group">
+              <label for="peliculas">Selecciona una Película:</label> <br>
+              <select class="form-select" id="peliculas" >
+                <option value="" disabled selected>Selecciona la pelicula</option>
+                <option value="paisaje">paisaje</option>
+                <option value="Moonlight">Moonlight</option>
+                <option value="El padrino">El padrino</option>
+                <option value="Iron Man">Iron Man</option>
+                <option value="Parasitos">Parasitos</option>
+              </select>
+            </div>
+          </form>
+
+          <button class="btn" id="guardar">Guardar</button>
+          <br>
+        </div>
+        <br>
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-md-4">
+             
+              <img src="img/cn.webp" alt="Película 1" class="img-fluid" id="posterPelicula" style="display: flex; border-radius: 20px; "  />
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <section class="d-grid gap-2 mb-3">
+        <article class="table-responsive">
+          <table class="table table-striped-columns" id="tabla">
+            <thead>
+              <tr>
+                <th>Nombre</th>
+                <th>Correo</th>
+                <th>Pelicula</th>
+                <th>Poster</th>
+                <th>Boletos</th>
+                <th>Total</th>
+                <th>Editar/Eliminar</th>
+              </tr>
+            </thead>
+            <tbody id="miTabla"></tbody>
+          </table>
+        </article>
+      </section>
+      <br>
+
+    </div>
+    <script src="app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>

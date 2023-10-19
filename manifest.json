@@ -1,0 +1,29 @@
+{
+    "short_name": "CineD3", 
+    "name":"App de cine",
+    "description": "Aplicación de cine",
+    "start_url": "index.html",
+    "background_color": "#242424",
+    "theme_color": "#242424",
+    "display": "standalone",
+    "orientation":"portrait",
+    "icons":[
+        {
+            "src":"iconos/256.png",
+            "type": "image/png",
+            "sizes": "256x256"
+        },
+
+        {
+            "src":"iconos/128.png",
+            "type": "image/png",
+            "sizes": "128x128"
+        },
+
+        {
+            "src":"iconos/96.png",
+            "type": "image/png",
+            "sizes": "96x96"
+        }
+    ]
+}
